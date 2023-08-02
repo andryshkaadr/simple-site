@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    /* font-size */
+    --fs-exsm: 12px;
+    --fs-sm: 14px;
+    --fs-normal: 16px;
+    --fs-med: 18px;
+    --fs-h5: 21px;
+    --fs-h4: 24px;
+    --fs-h3: 36px;
+    --fs-h1: 48px;
+
+    /* font-weight */
+    --fw-normal: 400;
+    --fw-bold: 700;
+
+    /* colors */
+    --color-gray: #EFEFEF;
+    --color-dark: #333333;
+    --color-black: #000;
+    --color-accent: #F13C6E;
+    --color-white: #fff;
+    --color-lightgray: #828282;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0px 30px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.nav-top-bg {
+    background-color: var(--color-gray);
+}
+
+.nav-top ul {
+    padding: 17px 0px;
+}
+
+.nav-top ul {
+    gap: 10px 30px;
+}
+
+.nav-top ul li a{
+    color: var(--color-dark);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-normal);
+}
+
+.nav-middle-bg {
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-gray);
+}
+
+.nav-middle {
+    padding: 20px 0px;
+    gap: 20px;
+}
+
+.nav-middle .logo a {
+    gap: 20px;
+}
+
+.nav-middle .logo a img{
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+}
+
+.nav-middle .logo a h3 {
+    color: var(--color-accent);
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+}
+
+.nav-middle .call-back {
+    gap: 40px;
+}
+
+.nav-middle .call-back .number {
+    color:  var(--color-black);
+    font-size: var(--fs-normal);
+    font-weight: var(--fw-normal);
+}
+
+.nav-middle .call-back .btn-call {
+    padding: 12px 50px;
+    border: 2px solid var(--color-accent);
+    border-radius: 40px;
+    color: var(--color-black);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-normal);
+}
+
+.nav-bottom-bg {
+    background-color: var(--color-white);
+}
+
+.nav-bottom {
+    padding: 30px 0px;
+}
+
+.nav-bottom ul {
+    gap: 10px 40px;
+}
+
+.nav-bottom ul li a {
+    color: var(--color-black);
+    font-size: var(--fs-normal);
+    font-weight: var(--fw-normal);
+}
