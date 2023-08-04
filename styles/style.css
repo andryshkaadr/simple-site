@@ -39,6 +39,10 @@ body {
     display: flex;
 }
 
+.fd-column {
+    flex-direction: column;
+}
+
 .flex-wrap {
     flex-wrap: wrap;
 }
@@ -60,7 +64,6 @@ body {
 }
 
 .main-page {
-    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -164,7 +167,6 @@ main {
 
 .main-content {
     padding: 30px 30px;
-    flex-direction: column;
     gap: 50px;
     inline-size: -webkit-fill-available;
 }
@@ -210,14 +212,13 @@ section h4 {
 }
 
 section .product-cards {
-    padding: 40px 0px;
+    padding: 40px 0px 100px 0px;
     gap: 30px;
 }
 
 section .product-card {
     background-color: var(--color-white);
     padding: 25px 30px; 
-    flex-direction: column;
     gap: 20px;
 }
 
@@ -249,4 +250,53 @@ section .product-card .buy-btn {
     color: var(--color-white);
     font-size: var(--fs-sm);
     font-weight: var(--fw-normal);
+}
+
+section .input-section .box {
+    width: auto;
+    gap: 20px 90px;
+    padding: 35px 40px;
+    background: var(--color-accent);
+}
+
+section .input-section .box .text {
+    max-width: 225px;
+    gap: 20px;
+}
+
+section .input-section .box .text .title{
+    color: var(--color-white);
+    font-size: var(--fs-normal);
+    font-weight: var(--fw-bold);
+}
+
+section .input-section .box .text p {
+    max-width: 130px;
+    line-height: 19px;
+    color: var(--color-white);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-normal);
+}
+
+section .input-section .box .text input {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 30px;
+    background: var(--color-white);
+}
+section .input-section .box .btn-store{
+    text-align: center;
+    border: 2px solid var(--color-white);
+    padding: 10px 50px;
+    border-radius: 30px;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-normal);
+}
+
+section .input-section .box img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
 }
